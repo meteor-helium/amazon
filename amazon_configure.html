@@ -1,0 +1,23 @@
+<template name="configureLoginServiceDialogForAmazon">
+  <p>
+    First, you'll need to register your application with Login with Amazon. Follow these steps:
+  </p>
+  <ol>
+    <li>
+      Visit <a href="https://login.amazon.com/" target="_blank">https://login.amazon.com/</a>
+    </li>
+    <li>
+      If you have signed up for Login with Amazon before, click App Console. Otherwise, click Sign Up and complete the process.
+    </li>
+    <li>
+      Click Register new application to register your application.
+    </li>
+    <li>
+      After registering your application, select Web Settings from the application details page.
+    </li>
+    <li>
+      Create an "Allowed Return URLs" entry with the following value.<br>
+      {{siteUrl}}_oauth/amazon
+    </li>
+  </ol>
+</template>
